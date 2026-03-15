@@ -5,8 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#EC9072] pt-3 pb-2 font-hermen">
-      <div className="container mx-auto  ">
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 mb-12">
+      <div className="container mx-auto ">
+        <div className="grid grid-cols-1   md:grid-cols-3 gap-8 text-center mb-12 ">
             <div className=" items-center pl-10 ">
                           <h3 className=" underline text-xl text-black-800  items-center font-semibold mb-9">Company</h3>
                           <ul>
@@ -104,7 +104,7 @@ const Footer = () => {
         
         
           <div className="text-center space-y-2">
-            <p className="text-black-800">
+            <p className="text-black-800 text-sm">
              Sasya © {new Date().getFullYear()} 
             </p>
           </div>

@@ -1,27 +1,52 @@
 import React from 'react'
 
+
 const RecentPhotos = () => {
   return (
-    
-    <div className=" font-libre mx-15 pb-24 text-2xl underline ">RecentPhotos
-      <div className='relative flex  gap-8'>
-    <div className="flex-col">
-        <img src="/Images/Recent_photos/bluebells.jpg " className="h-75 w-130 p-2.5"></img>
-        <img src="/Images/Recent_photos/redwood.jpg " className="h-75 w-130  p-2.5"></img>
-    </div>
-          <img src="/Images/Recent_photos/deep_forest.jpg " className="h-150 w-500 p-2.5"></img>
-    <button className="absolute bottom-15 right-15 flex items-center gap-3 bg-green-500 text-white px-6 py-3 rounded-full text-2xl font-medium group hover:bg-green-600 transition">
+    <div className="font-libre px-6 md:px-16 pb-20 text-2xl">
+      
+      <h2 className="underline mb-6">Recent Photos</h2>
 
-            Explore More
+      <div className="relative flex flex-col md:flex-row gap-6">
 
-     <span className="   text-white rounded-full transform transition-transform duration-300 group-hover:translate-x-2">
-          <img src="/arrow-up.png" className="h-10 w-10" alt="arrow" />
-     </span>
+        {/* Left Images */}
+        <div className="flex flex-col gap-6 md:w-1/2">
+          <img
+            src="/Images/Recent_photos/bluebells.jpg"
+            className="w-130 h-30 md:h-60 object-cover "
+            alt="bluebells"
+          />
 
-</button>
+          <img
+            src="/Images/Recent_photos/redwood.jpg"
+            className="w-130 h-30 md:h-60 object-cover "
+            alt="redwood"
+          />
         </div>
-    </div>
-  )
-}
 
-export default RecentPhotos
+        {/* Right Image */}
+        <div className="md:w-600">
+          <img
+            src="/Images/Recent_photos/deep_forest.jpg"
+            className="w-500 h-125 md:h-125 object-cover "
+            alt="deep forest"
+          />
+        </div>
+
+        {/* Button */}
+        <button className="absolute bottom-10 right-10  md:mt-0  flex items-center gap-3 bg-green-500 text-white px-5 py-3 rounded-full text-lg md:text-xl font-medium group hover:bg-green-600 transition">
+          
+          Explore More
+
+          <span className="transform transition-transform duration-300 group-hover:translate-x-2">
+            <img src="/arrow-up.png" className="h-6 w-6 md:h-8 md:w-8" alt="arrow" />
+          </span>
+
+        </button>
+
+      </div>
+    </div>
+  );
+};
+
+export default RecentPhotos;

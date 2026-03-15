@@ -32,9 +32,9 @@ const Header = () => {
               <Link key={index} to={`/${item.toLowerCase().replace(' ', '-')}`}
                 className="p-3 w-auto whitespace-nowrap text-white-700 font-medium rounded-full hover:bg-red-100 hover:text-[#C2394C]  active:bg-purple-200 transition-all duration-300 transform hover:-translate-y-0.5">
                 {item == 'Projects' ? (
-          <span className="flex items-center gap-1">
+          <span className="flex items-center ">
             {item}
-            <img src="/down_arrow.png" className="h-4 w-4" />
+            <img src="/caret-down.png" className="h-5 w-9 top-6" />
           </span>
         )   : item }
               </Link>
@@ -57,9 +57,14 @@ const Header = () => {
        
       {isMenuOpen && (
         <nav className="bg-[#C2394C] md:hidden flex mt-4 pb-2 space-y-4">
-          {['Home', 'About Us', 'Products', 'Research', 'Contact'].map((item, index) => (
+          {['Home', 'About Us', 'Projects', 'Gallery', 'Contact Us','Sign In'].map((item, index) => (
             <Link key={index} to={`/${item.toLowerCase().replace(' ', '-')}`} className="px-4 py-2.5 text-white-700 font-medium rounded-lg hover:bg-green-100 hover:text-green-800 active:bg-purple-200 transition-all duration-300 transform hover:-translate-y-0.5">
-              {item}
+              {item == 'Projects' ? (
+          <span className="flex items-center ">
+            {item}
+            <img src="/caret-down.png" className="h-5 w-9 top-6" />
+          </span>
+        )   : item }
             </Link>
           ))}
              <img src="/src/assets/profile.svg" alt="profile" className='h-10 w-10  rounded-full hover:bg-green-00 object-contain'/>
