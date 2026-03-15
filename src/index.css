@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@font-face {
+  font-family: IslandMoments;
+  src: url("../src/assets/fonts/IslandMoments-Regular.ttf");
+}
+@font-face {
+  font-family: Instrumentserif;
+  src: url("../src/assets/fonts/instrumentserif-regular.ttf");
+}
+@font-face {
+  font-family: HermeneusOne;
+  src: url("../src/assets/fonts/HermeneusOne-Regular.ttf");
+}
+@font-face {
+  font-family: Libre;
+  src: url("../src/assets/fonts/LibreCaslonDisplay-Regular.otf");
+}
+@theme {
+  --font-island: IslandMoments;
+  --font-instumentserif: Instrumentserif;
+  --font-hermen: HermeneusOne;
+  --font-libre: Libre;
+}
+main {
+  background: #fffeed;
+}
