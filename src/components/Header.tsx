@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import {  Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { config } from "../config/index";
 
 const Header = () => {
+  const { logoPath } = config;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
   return (
@@ -13,7 +15,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center ">
             <img 
-              src="/src/assets/potted_plant.svg" 
+              src={`${logoPath}`} 
               alt="Logo" 
               className="h-16 w-15 object-contain transform hover:scale-105 transition-transform duration-300" 
             />

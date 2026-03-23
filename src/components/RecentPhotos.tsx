@@ -1,7 +1,9 @@
 import React from 'react'
-
+import {config} from "../config/index"
 
 const RecentPhotos = () => {
+
+  const { recentPhotos } = config;
   return (
     <div className="font-libre px-6 md:px-16 pb-20 text-2xl">
       
@@ -12,13 +14,13 @@ const RecentPhotos = () => {
         {/* Left Images */}
         <div className="flex flex-col gap-6 md:w-1/2">
           <img
-            src="/Images/Recent_photos/bluebells.jpg"
+            src={`${recentPhotos.image1}`}
             className="w-130 h-30 md:h-60 object-cover "
             alt="bluebells"
           />
 
           <img
-            src="/Images/Recent_photos/redwood.jpg"
+            src={`${recentPhotos.image2}`}
             className="w-130 h-30 md:h-60 object-cover "
             alt="redwood"
           />
@@ -27,7 +29,7 @@ const RecentPhotos = () => {
         {/* Right Image */}
         <div className="md:w-600">
           <img
-            src="/Images/Recent_photos/deep_forest.jpg"
+            src={`${recentPhotos.image3}`}
             className="w-500 h-125 md:h-125 object-cover "
             alt="deep forest"
           />

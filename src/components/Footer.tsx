@@ -2,7 +2,12 @@ import React from 'react';
 import { Icon } from "@iconify/react";
 import { Facebook, Instagram, MessageCircle, Youtube } from 'lucide-react';
 import { FaInstagram } from "react-icons/fa";
+import { config } from "../config/index";
+
 const Footer = () => {
+  const { social } = config;
+  console.log(social.instagram);
+  console.log(social.linkedin);
   return (
     <footer className="bg-[#EC9072] pt-3 pb-2 font-hermen">
       <div className="container mx-auto ">
@@ -34,7 +39,7 @@ const Footer = () => {
             <div className="flex gap-4 ">
               
               <a 
-                href="https://www.facebook.com" 
+                href={`//${social.facebook}`}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-white rounded-full hover:scale-110 transition-transform duration-300 "
@@ -46,7 +51,7 @@ const Footer = () => {
             />
               </a>
               <a 
-                href="https://www.youtube.com" 
+                href={`//${social.youtube}`}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className=" bg-white hover:scale-110 transition-transform duration-300"
@@ -58,7 +63,7 @@ const Footer = () => {
             />
               </a>
               <a 
-                href="https://www.linkedin.com"  
+                href={`//${social.linkedin}`} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-white rounded-full hover:scale-110 transition-transform duration-300"
@@ -70,19 +75,19 @@ const Footer = () => {
             />
                 </a>
                <a 
-                href="https://www.twitter.com"  
+                href={`//${social.twitter}`}  
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-blue-500  rounded-full hover:scale-110 transition-transform duration-300"
               >
                   <img 
               src="/src/assets/icons/mdi--twitter.svg" 
-              alt="Facebook_Icon" 
+              alt="twitter_Icon" 
               className="h-10 w-fit "
             />
               </a>
               <a 
-                href="https://www.instagram.com"  
+                href={`//${social.instagram}`} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-gradient-to-tr from-pink-500 via-yellow-400 to-purple-600 p-2.5 rounded-full hover:scale-110 transition-transform duration-300"
@@ -92,12 +97,17 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-8">
-            <h3 className="underline font-hermen text-lg">Email Us</h3>
+              <h3 className="underline font-hermen text-lg">Email Us</h3>
+              <a 
+                href={`//${social.gmail}`}  
+                target="_blank" 
+                rel="noopener noreferrer">
               <img 
               src="/src/assets/icons/mdi--email.svg" 
-              alt="Facebook_Icon" 
+              alt="Email_Icon" 
               className="h-10 w-fit "
-              />
+                />
+              </a>
               </div>
           </div>
         </div>
