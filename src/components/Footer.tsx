@@ -6,8 +6,7 @@ import { config } from "../config/index";
 
 const Footer = () => {
   const { social } = config;
-  console.log(social.instagram);
-  console.log(social.linkedin);
+  
   return (
     <footer className="bg-[#EC9072] pt-3 pb-2 font-hermen">
       <div className="container mx-auto ">

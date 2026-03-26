@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Header from './components/Header.tsx'
 import Hero from './components/Hero.tsx'
 import Species from './components/Species.tsx'
+import ContactUs from './pages/ContactUs.tsx'
 
 const router =createBrowserRouter( [
   {
@@ -17,8 +18,12 @@ const router =createBrowserRouter( [
         element:<Hero/>,
       },
         {
-        path: "/",
-        element:<Species/>,
+        path: "/home",
+        element:<Hero/>,
+      },
+        {
+        path: "/contact-us",
+        element:<ContactUs/>,
       },
       
     ]

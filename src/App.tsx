@@ -10,16 +10,14 @@ import RecentPhotos from './components/RecentPhotos'
 function App() {
 
   return (
-    <div className="min-h-screen  flex flex-col">
+   
+    <div className="bg-[#fffeed] min-h-screen  flex flex-col">
        
       <Header />
      
       <main className="flex-grow">
         <Outlet />
-        <Species />
-        <RecentPhotos/>
       </main>
-      
       
       <Footer />
       </div>
