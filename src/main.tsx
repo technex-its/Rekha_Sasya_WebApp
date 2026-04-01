@@ -7,6 +7,7 @@ import Header from './components/Header.tsx'
 import Hero from './components/Hero.tsx'
 import Species from './components/Species.tsx'
 import ContactUs from './pages/ContactUs.tsx'
+import Gallery from './pages/Gallery.tsx'
 
 const router =createBrowserRouter( [
   {
@@ -24,6 +25,10 @@ const router =createBrowserRouter( [
         {
         path: "/contact-us",
         element:<ContactUs/>,
+      },
+        {
+        path: "/gallery",
+        element:<Gallery/>,
       },
       
     ]

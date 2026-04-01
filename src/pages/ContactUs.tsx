@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUs = () => {
   return (
       
-      <section className="bg-[#C2394C]/60 min-h-screen p-24 font-libre flex flex-col  space-y-2">
+      <section className="bg-[#C2394C]/60 w-full mt-19 md:bg-[#C2394C]/60 min-h-screen p-20 font-libre flex flex-col  space-y-2 ">
           <div className="text-white  text-center">
               <h1 className="text-6xl font-bold">Get in Touch</h1>
               <div className="text-xl ">
@@ -12,8 +12,8 @@ const ContactUs = () => {
               </div>
           </div>
 
-          <div className="container h-150 w-300 bg-white m-auto rounded-4xl flex p-12">
-              <div className="relative w-1/2 flex flex-col pl-10 space-y-8 ">
+          <div className="container  h-150  bg-white  rounded-4xl flex p-12 md:w-300 m-auto">
+              <div className="relative w-1/2 flex flex-col  md:pl-10 space-y-8 ">
                   <h1 className="text-black text-3xl font-bold ">Let's Work Together </h1>
             <div className=" mt-5 flex space-x-5">
                <div className=" h-10 w-10 bg-[#C2394C]/20 flex  item-center justify-center rounded-full">   
@@ -26,7 +26,7 @@ const ContactUs = () => {
                <div className=" h-10 w-10 bg-[#C2394C]/20 flex  item-center justify-center rounded-full">   
                   <img src="/Images/contactus/mail.png" className="mt-2 h-5 w-5" alt="email icon" />
                 </div>
-                <p className="text-lg">sasya_plants@gmail.com</p>   
+                <p className="text-lg z-10">sasya_plants@gmail.com</p>   
                   </div>
                   
              <div className="  flex space-x-5">

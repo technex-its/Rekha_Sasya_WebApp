@@ -13,5 +13,6 @@ export const config = {
         image3: import.meta.env.VITE_RECENTPHOTOS_IMAGE3,
 
     },
-  logoPath   : import.meta.env.VITE_LOGO_PATH,
+    logoPath: import.meta.env.VITE_LOGO_PATH,
+   api_key: import.meta.env.VITE_API_KEY,
 };
